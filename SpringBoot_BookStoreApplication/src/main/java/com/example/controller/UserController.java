@@ -29,10 +29,6 @@ public class UserController {
     public  String test(){
         return "Spring-boot - CICD ";
     }
-    @GetMapping("/don")
-    public  String don(){
-        return "Pushpak DON!!";
-    }
 
     @PostMapping("/userRegistration")
     public ResponseEntity<String> userRegistration(@RequestBody DtoToUserEntity dtoToUserEntity) {
