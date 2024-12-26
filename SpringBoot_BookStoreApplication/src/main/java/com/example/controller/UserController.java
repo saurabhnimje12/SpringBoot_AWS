@@ -27,7 +27,7 @@ public class UserController {
 
     @GetMapping("/test")
     public  String test(){
-        return "Spring-boot";
+        return "Spring-boot - CICD ";
     }
     @GetMapping("/don")
     public  String don(){
