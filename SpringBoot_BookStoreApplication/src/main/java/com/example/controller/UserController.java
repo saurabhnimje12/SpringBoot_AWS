@@ -30,6 +30,11 @@ public class UserController {
         return "Spring-boot - CICD ";
     }
 
+    @GetMapping("/hello")
+    public  String test(){
+        return "Hello, Spring-boot ";
+    }
+
     @PostMapping("/userRegistration")
     public ResponseEntity<String> userRegistration(@RequestBody DtoToUserEntity dtoToUserEntity) {
         return new ResponseEntity<String>(userService.userRegistration(dtoToUserEntity), HttpStatus.CREATED);
