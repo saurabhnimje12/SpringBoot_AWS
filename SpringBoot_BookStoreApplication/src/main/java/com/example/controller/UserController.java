@@ -31,7 +31,7 @@ public class UserController {
     }
 
     @GetMapping("/hello")
-    public  String test(){
+    public  String hello(){
         return "Hello, Spring-boot ";
     }
 
